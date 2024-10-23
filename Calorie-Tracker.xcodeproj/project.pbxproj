@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		55D21C812CC9A92300922398 /* Calorie_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D21C7E2CC9A92300922398 /* Calorie_TrackerApp.swift */; };
+		55D21C852CC9A92300922398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D21C7D2CC9A92300922398 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		55B2B0792CC99C7F00EB411E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,7 +32,26 @@
 		55B2B0662CC99C7D00EB411E /* Calorie-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2B0782CC99C7F00EB411E /* Calorie-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calorie-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2B0822CC99C7F00EB411E /* Calorie-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calorie-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D21C7D2CC9A92300922398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55D21C7E2CC9A92300922398 /* Calorie_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_TrackerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		55D21C9F2CC9AA4F00922398 /* Exceptions for "Models" folder in "Calorie-Tracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Item.swift,
+			);
+			target = 55B2B0652CC99C7D00EB411E /* Calorie-Tracker */;
+		};
+		55D21CA02CC9AA4F00922398 /* Exceptions for "Preview Content" folder in "Calorie-Tracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Assets.xcassets",
+			);
+			target = 55B2B0652CC99C7D00EB411E /* Calorie-Tracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		55B2B07B2CC99C7F00EB411E /* Calorie-TrackerTests */ = {
@@ -40,9 +64,30 @@
 			path = "Calorie-TrackerUITests";
 			sourceTree = "<group>";
 		};
-		55B2B0AD2CC99CC200EB411E /* Calorie-Tracker */ = {
+		55D21C962CC9AA4F00922398 /* Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Calorie-Tracker";
+			exceptions = (
+				55D21C9F2CC9AA4F00922398 /* Exceptions for "Models" folder in "Calorie-Tracker" target */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55D21C982CC9AA4F00922398 /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				55D21CA02CC9AA4F00922398 /* Exceptions for "Preview Content" folder in "Calorie-Tracker" target */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55D21C992CC9AA4F00922398 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55D21C9B2CC9AA4F00922398 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +120,12 @@
 		55B2B05D2CC99C7D00EB411E = {
 			isa = PBXGroup;
 			children = (
-				55B2B0AD2CC99CC200EB411E /* Calorie-Tracker */,
+				55D21C7E2CC9A92300922398 /* Calorie_TrackerApp.swift */,
+				55D21C962CC9AA4F00922398 /* Models */,
+				55D21C992CC9AA4F00922398 /* ViewModels */,
+				55D21C9B2CC9AA4F00922398 /* Views */,
+				55D21C7D2CC9A92300922398 /* Assets.xcassets */,
+				55D21C982CC9AA4F00922398 /* Preview Content */,
 				55B2B07B2CC99C7F00EB411E /* Calorie-TrackerTests */,
 				55B2B0852CC99C7F00EB411E /* Calorie-TrackerUITests */,
 				55B2B0672CC99C7D00EB411E /* Products */,
@@ -108,7 +158,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				55B2B0AD2CC99CC200EB411E /* Calorie-Tracker */,
+				55D21C9B2CC9AA4F00922398 /* Views */,
 			);
 			name = "Calorie-Tracker";
 			packageProductDependencies = (
@@ -212,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D21C852CC9A92300922398 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D21C812CC9A92300922398 /* Calorie_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
