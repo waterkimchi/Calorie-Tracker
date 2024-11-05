@@ -1,15 +1,15 @@
 //
-//  Calorie_TrackerApp.swift
-//  Calorie-Tracker
+//  smileyApp.swift
+//  smiley
 //
-//  Created by Hyunsu Lim on 10/23/24.
+//  Created by Hyunsu Lim on 10/29/24.
 //
 
 import SwiftUI
 import SwiftData
 
 @main
-struct Calorie_TrackerApp: App {
+struct smileyApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,

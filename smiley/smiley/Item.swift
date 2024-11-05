@@ -1,8 +1,8 @@
 //
 //  Item.swift
-//  Calorie-Tracker
+//  smiley
 //
-//  Created by Hyunsu Lim on 10/23/24.
+//  Created by Hyunsu Lim on 10/29/24.
 //
 
 import Foundation
